@@ -106,13 +106,18 @@
   <div id="container"></div>
 
   <div id="info">
-    <strong><a href="http://www.chromeexperiments.com/globe">WebGL Globe</a></strong> <span class="bull">&bull;</span> Created by the Google Data Arts Team <span class="bull">&bull;</span> Data acquired from <a href="http://sedac.ciesin.columbia.edu/gpw/">SEDAC</a>
+    <strong><a href="http://www.chromeexperiments.com/globe">WebGL Globe</a></strong> <span class="bull">&bull;</span> Created by the Google Data Arts Team <span class="bull">&bull;</span> Data acquired from <a href=https://data.nasa.gov/Earth-Science/Global-Landslide-Catalog/h9d8-neg4>NASA</a>
+    <span class = "bull">&bull;</span> Jayaram Dargula
+
   </div>
 
 
   <div id="title">
     Most Landslide Prone Areas, By Casualties 
   </div>
+  <p>
+    Jay Dargula
+  </p>
 
   <a id="ce" href="http://www.chromeexperiments.com/globe">
     <span>This is a Chrome Experiment</span>
@@ -136,7 +141,7 @@ var globe = new DAT.Globe( container );
 var xhr = new XMLHttpRequest();
 
 // Where do we get the data?
-xhr.open( 'GET', '/globe/lanslidesJSON3.json', true );
+xhr.open( 'GET', '/globe/ls3.json', true );
 
 // What do we do when we have it?
 xhr.onreadystatechange = function() {
